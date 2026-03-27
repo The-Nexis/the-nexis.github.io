@@ -1,17 +1,70 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-
-/*const projects = [
-  { name: "NEXIS_CORE", desc: "C++ Engine // Low-level systems architecture.", link: "#" },
-  { name: "GHOST_PORTFOLIO", desc: "Astro-based static site // Zero-footprint deployment.", link: "#" }
-];*/
 ---
 
-<BaseLayout title="Nexis">
+<BaseLayout title="NEXIS // TERMINAL">
   <main class="content-wrapper">
     <header class="hero">
-      <h1 class="gradient-text">Hey, I'm Nexis!</h1>
-      <p class="subtitle">Welcome to my web!</p>
+      <h1 class="gradient-text">SYSTEM_OVERRIDE: NEXIS</h1>
+      <p class="subtitle">[ ACCESS_LEVEL: ROOT ]</p>
     </header>
+
+    <section class="prose">
+      <h2 class="section-title">> _INITIALIZING_LOREM_IPSUM...</h2>
+      
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        <strong>Nullam in dui mauris.</strong> Vivamus hendrerit arcu sed erat 
+        molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend 
+        nibh porttitor. Ut in nulla enim.
+      </p>
+
+      <p>
+        Phasellus molestie magna non est bibendum non venenatis nisl tempor. 
+        Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor 
+        posuere. Praesent id metus massa, ut blandit odio. 
+      </p>
+
+      <ul class="terminal-list">
+        <li>[CYPHERPUNKS] Proin quis tortor orci.</li>
+        <li>[WRITE] Etiam at risus et justo dignissim.</li>
+        <li>[CODE] Donec vel mauris quis erat.</li>
+      </ul>
+
+      <p>
+        Curabitur sem ante, interdum vel suscipit sed, egestas ut ipsum. 
+        Nam imperdiet elit eu neque iaculis iaculis. 
+      </p>
+    </section>
   </main>
 </BaseLayout>
+
+<style>
+  .prose {
+    max-width: 65ch; /* Limits characters per line for better readability */
+    margin: 0 auto;
+    color: var(--text-main);
+    line-height: 1.8;
+  }
+
+  .section-title {
+    color: var(--accent);
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--accent-muted);
+    padding-bottom: 0.5rem;
+  }
+
+  .terminal-list {
+    list-style: none;
+    padding: 1.5rem;
+    background: rgba(255, 102, 0, 0.05);
+    border-left: 2px solid var(--accent);
+    margin: 2rem 0;
+  }
+
+  .terminal-list li {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+  }
+</style>
