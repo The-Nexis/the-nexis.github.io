@@ -37,14 +37,18 @@ body::before {
 }
 
 .content-wrapper {
-  max-width: 1000px; 
-  margin: 0 auto; /* Standard centering */
+  max-width: 1200px; 
+  margin: 0 auto;
   padding: 8rem 2rem;
   position: relative;
   z-index: 1;
+  /* Centering Logic */
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
 }
 
-/* Navigation - Centered Content */
+/* Navigation */
 .main-nav {
   position: fixed;
   top: 0;
@@ -80,11 +84,9 @@ body::before {
   margin-bottom: 4rem;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Keeps subtitle aligned to the start of the title */
-  width: max-content;      /* Shrinks container to text width */
-  max-width: 100%;         /* Prevents overflow on small screens */
-  margin-left: auto;       /* Centers the shrunk container */
-  margin-right: auto;      /* Centers the shrunk container */
+  align-items: flex-start;
+  width: max-content;
+  max-width: 100%;
 }
 
 .gradient-text {
@@ -96,7 +98,6 @@ body::before {
   color: var(--text-main);
   margin: 0;
   text-transform: uppercase;
-  text-align: left; /* Ensures text stays left inside the centered box */
 }
 
 .subtitle {
