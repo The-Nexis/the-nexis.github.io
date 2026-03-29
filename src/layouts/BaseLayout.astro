@@ -7,14 +7,16 @@ const { title } = Astro.props;
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>{title}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="scanlines"></div>
-    
     <nav class="main-nav">
-      <a href="/">{'>'} _HOME</a> 
-      <a href="https://github.com/The-Nexis" target="_blank">{'>'} _GITHUB</a>
+      <div class="nav-container">
+        <a href="/">{'>'} _HOME</a> 
+        <a href="https://github.com/The-Nexis" target="_blank">{'>'} _GITHUB</a>
+      </div>
     </nav>
     <slot />
   </body>
